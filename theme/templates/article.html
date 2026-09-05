@@ -1,7 +1,18 @@
 {% extends "base.html" %}
+{% import "_meta.html" as meta %}
 
 {% block title %}{{ article.title }} · {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.summary|striptags|truncate(160) }}{% endblock %}
+
+{% block social %}
+{{ meta.tags(
+     article.title,
+     article.summary,
+     SITEURL + "/" + article.url,
+     SITEURL + "/" + article.cover if article.cover else SITEURL + "/theme/img/og-default.jpg",
+     "article",
+     article.date.isoformat()) }}
+{% endblock %}
 
 {% block content %}
 <main class="article-page">

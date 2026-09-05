@@ -1,6 +1,15 @@
 {% extends "base.html" %}
+{% import "_meta.html" as meta %}
 
 {% block title %}{{ page.title }} · {{ SITENAME }}{% endblock %}
+
+{% block social %}
+{{ meta.tags(
+     page.title + " · " + SITENAME,
+     page.summary|default(SITESUBTITLE, true),
+     SITEURL + "/" + page.url,
+     SITEURL + "/theme/img/og-default.jpg") }}
+{% endblock %}
 
 {% block content %}
 <main class="page-body">

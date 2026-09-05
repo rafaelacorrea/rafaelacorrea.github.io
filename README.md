@@ -52,6 +52,9 @@ Metadados opcionais reconhecidos pelo tema:
 | `Cover: images/foo.jpg` | Imagem de capa no lugar do padrão listrado |
 | `Cover_caption:` | Legenda do bloco de capa quando não há imagem |
 
+O `Cover` também vira a imagem de pré-visualização quando o post é
+compartilhado. Sem ele, o site usa o card padrão.
+
 Imagens vão em `content/images/` e são referenciadas como
 `![legenda]({static}/images/foto.jpg)`.
 
@@ -71,6 +74,20 @@ publishconf.py      Sobrescreve para produção (domínio, feeds)
 Os textos do site — título do hero, cartão "agora", bio, links de redes —
 ficam em `pelicanconf.py`, não dentro dos templates. Para mudar a chamada da
 home não é preciso abrir HTML.
+
+## Imagem de compartilhamento
+
+O `<head>` traz Open Graph e Twitter Card em todas as páginas, então links
+colados no WhatsApp, LinkedIn, Slack ou X mostram título, descrição e imagem.
+
+O card padrão é `theme/static/img/og-default.jpg`, gerado por script:
+
+```bash
+./.venv/Scripts/python.exe -m pip install -r requirements-dev.txt
+./.venv/Scripts/python.exe tools/make_og.py
+```
+
+Rode de novo se mudar o nome, a chamada da home ou a foto de perfil.
 
 ## Publicação
 

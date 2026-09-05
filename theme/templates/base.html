@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% import "_meta.html" as meta %}
 <html lang="{{ DEFAULT_LANG }}">
 <head>
   <meta charset="utf-8">
@@ -11,6 +12,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Public+Sans:wght@400;600;700;800&display=swap">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages.css">
+
+  {# Cada template filho substitui este bloco com os dados da sua propria pagina. #}
+  {% block social %}
+  {{ meta.tags(SITENAME, SITESUBTITLE, SITEURL + "/", SITEURL + "/theme/img/og-default.jpg") }}
+  {% endblock %}
+
+  <link rel="icon" type="image/svg+xml" href="{{ SITEURL }}/theme/img/favicon.svg">
+  <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#1a0f2b">
 
   {% if FEED_ALL_ATOM %}
   <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }}" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
