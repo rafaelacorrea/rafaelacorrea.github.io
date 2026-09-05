@@ -38,6 +38,10 @@ body {
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Empurra o rodape para baixo, ocupando a sobra vertical. */
