@@ -1,0 +1,12 @@
+# Pelican
+output/
+cache/
+__pycache__/
+*.pyc
+
+# Ambiente virtual
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db
