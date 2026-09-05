@@ -1,0 +1,18 @@
+version: 2
+updates:
+  # Mantem as actions do workflow atualizadas. Resolve, entre outros, o aviso
+  # de descontinuacao do Node 20 nos runners.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+
+  # Pelican e demais dependencias de build.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "deps"

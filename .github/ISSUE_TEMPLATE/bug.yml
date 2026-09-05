@@ -1,0 +1,54 @@
+name: Problema no site
+description: Algo quebrado, errado ou fora do lugar em rafaelacorrea.dev
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigada por avisar! Quanto mais específico, mais rápido eu consigo corrigir.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que aconteceu
+      description: Descreva o problema e o que você esperava que acontecesse.
+      placeholder: Na página de currículo, o botão "Imprimir / PDF" não faz nada.
+    validations:
+      required: true
+
+  - type: input
+    id: pagina
+    attributes:
+      label: Página
+      description: Endereço onde o problema aparece.
+      placeholder: https://rafaelacorrea.dev/pages/curriculo/
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Abrir a página
+        2. Clicar em...
+        3. Observar que...
+    validations:
+      required: false
+
+  - type: input
+    id: ambiente
+    attributes:
+      label: Navegador e dispositivo
+      placeholder: Chrome 141 no Windows 11 / Safari no iPhone 14
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Captura de tela ou observações
+      description: Arraste imagens para cá, se ajudar.
+    validations:
+      required: false

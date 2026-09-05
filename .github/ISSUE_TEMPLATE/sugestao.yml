@@ -1,0 +1,34 @@
+name: Sugestão ou correção de conteúdo
+description: Ideia de melhoria, correção de texto ou link quebrado em um post
+title: "[sugestão] "
+labels: ["conteúdo"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Correção de texto (erro de digitação, gramática)
+        - Correção técnica (informação incorreta ou desatualizada)
+        - Link quebrado
+        - Sugestão de melhoria no site
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: onde
+    attributes:
+      label: Onde
+      description: Endereço da página ou do post.
+      placeholder: https://rafaelacorrea.dev/primeiro-post/
+    validations:
+      required: true
+
+  - type: textarea
+    id: detalhe
+    attributes:
+      label: Detalhe
+      description: O que está errado e, se souber, qual seria a correção.
+    validations:
+      required: true
