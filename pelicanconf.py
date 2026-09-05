@@ -90,7 +90,7 @@ SOCIAL_EMAIL = "oi@rafaelacorrea.dev"
 # Buy Me a Coffee. Preencha BMC_USERNAME com o nome de usuario da conta
 # (o trecho final de buymeacoffee.com/SEU-USUARIO) para o botao aparecer no
 # fim dos posts e no rodape. Vazio = nada e exibido.
-BMC_USERNAME = ""
+BMC_USERNAME = "rafaelacorrea"
 BMC_LABEL = "Me pague um café"
 BMC_TITLE = "Gostou do post?"
 BMC_TEXT = (
