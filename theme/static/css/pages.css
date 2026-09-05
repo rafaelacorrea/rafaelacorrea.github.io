@@ -192,3 +192,16 @@
   font-size: 13px; line-height: 1.5; color: rgba(239, 233, 251, .82);
 }
 .cv-highlight svg { color: var(--accent); flex: none; }
+
+/* Links de codigo e demo nos cartoes de projeto */
+.project-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.project-links a {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 13px; border-radius: 8px;
+  border: 1px solid rgba(203, 178, 255, .32); color: var(--accent-soft);
+  font-family: var(--mono); font-size: 11.5px;
+}
+.project-links a:hover { border-color: var(--accent-soft); background: rgba(169, 123, 255, .1); }
+.project-links a.is-primary { background: var(--accent); color: var(--bg-deep); border-color: var(--accent); }
+.project-links a.is-primary:hover { background: var(--accent-soft); color: var(--bg-deep); }
+.content .project-links a { text-decoration: none; }
