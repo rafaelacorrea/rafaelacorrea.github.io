@@ -22,6 +22,7 @@ Full_width: yes
   <div class="logo-card"><img src="/theme/img/escola-da-nuvem.jpg" alt="Escola da Nuvem"><span>Escola da Nuvem</span></div>
   <div class="logo-card"><img src="/theme/img/compass-uol.jpg" alt="Compass UOL"><span>Compass UOL</span></div>
   <div class="logo-card"><img src="/theme/img/instruct.jpg" alt="Instruct"><span>Instruct</span></div>
+  <div class="logo-card"><img src="/theme/img/linuxtips.jpg" alt="LINUXtips"><span>LINUXtips Local Belém</span></div>
 </div>
 
 <div class="eyebrow" style="margin-bottom:18px">o que eu uso</div>

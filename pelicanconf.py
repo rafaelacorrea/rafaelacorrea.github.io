@@ -75,6 +75,7 @@ NOW_ITEMS = [
     {"img": "pyladies.jpg", "role": "Coordenadora de comunidade", "org": "PyLadies Belém"},
     {"img": "elas-na-tech.jpg", "role": "Coordenadora de comunidade", "org": "Elas na Tecnologia"},
     {"img": "escola-da-nuvem.jpg", "role": "Aprendiz de Cloud", "org": "Escola da Nuvem · AWS"},
+    {"img": "linuxtips.jpg", "role": "Embaixadora", "org": "LINUXtips Local Belém"},
 ]
 
 AUTHOR_BIO = (

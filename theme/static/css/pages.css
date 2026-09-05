@@ -138,7 +138,8 @@
   font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
   color: var(--ink-40); margin-bottom: 16px;
 }
-.cv-section-title + .cv-section-title { margin-top: 30px; }
+/* Todo titulo de secao, menos o primeiro da coluna, respira acima. */
+.cv-section-title:not(:first-child) { margin-top: 30px; }
 
 .cv-job { display: flex; gap: 14px; margin-bottom: 20px; }
 .cv-job img { width: 34px; height: 34px; border-radius: 9px; object-fit: cover; background: #fff; flex: none; }
@@ -171,3 +172,23 @@
   .cv-job-desc, .cv-block, .cv-summary { color: #333; }
   .cv-job-when, .cv-job-org, .cv-section-title { color: #666; }
 }
+
+/* Formacao e certificacoes: lista compacta, agrupada por instituicao */
+.cv-edu { display: flex; gap: 12px; margin-bottom: 16px; }
+.cv-edu img { width: 30px; height: 30px; border-radius: 8px; object-fit: contain; background: #fff; flex: none; }
+.cv-edu-blank { width: 30px; height: 30px; border-radius: 8px; background: rgba(255, 255, 255, .05); flex: none; }
+.cv-edu-title { font-size: 13.5px; font-weight: 700; line-height: 1.35; }
+.cv-edu-org { font-size: 12.5px; color: var(--ink-50); }
+.cv-edu-when { font-family: var(--mono); font-size: 10.5px; color: var(--ink-40); }
+
+.cv-certs { list-style: none; margin: 0 0 8px; padding: 0; }
+.cv-certs li { font-size: 13px; line-height: 1.6; color: rgba(239, 233, 251, .72); margin-bottom: 9px; }
+.cv-certs strong { color: var(--ink); font-weight: 600; }
+
+.cv-highlight {
+  display: flex; gap: 10px; align-items: center;
+  padding: 12px 14px; border-radius: 10px; margin-bottom: 8px;
+  background: rgba(169, 123, 255, .1); border: 1px solid rgba(203, 178, 255, .25);
+  font-size: 13px; line-height: 1.5; color: rgba(239, 233, 251, .82);
+}
+.cv-highlight svg { color: var(--accent); flex: none; }

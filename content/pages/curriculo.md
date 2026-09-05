@@ -50,6 +50,15 @@ Full_width: yes
       </div>
 
       <div class="cv-job">
+        <img src="/theme/img/linuxtips.jpg" alt="">
+        <div>
+          <div class="cv-job-head"><span class="cv-job-title">Embaixadora</span><span class="cv-job-when">2025 — atual</span></div>
+          <div class="cv-job-org">LINUXtips Local Belém</div>
+          <div class="cv-job-desc">Representando a comunidade em Belém para aproximar tecnologia da realidade paraense.</div>
+        </div>
+      </div>
+
+      <div class="cv-job">
         <img src="/theme/img/elas-na-tech.jpg" alt="">
         <div>
           <div class="cv-job-head"><span class="cv-job-title">Coordenadora de comunidade</span><span class="cv-job-when">mar 2025 — atual</span></div>
@@ -98,12 +107,50 @@ Full_width: yes
         <span class="skill">Trabalho em equipe</span>
       </div>
 
-      <div class="cv-section-title">Formação</div>
-      <div class="cv-block"><strong>Cloud Computing — AWS</strong>Escola da Nuvem · 2025</div>
-      <div class="cv-block"><strong>Desenvolvimento mobile</strong>Compass UOL · programa de estágio</div>
+      <div class="cv-section-title">Formação acadêmica</div>
+
+      <div class="cv-edu">
+        <div class="cv-edu-blank"></div>
+        <div>
+          <div class="cv-edu-title">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
+          <div class="cv-edu-org">Faculdade Facint</div>
+          <div class="cv-edu-when">jun 2024 — atual</div>
+        </div>
+      </div>
+
+      <div class="cv-edu">
+        <img src="/theme/img/ifpa.png" alt="">
+        <div>
+          <div class="cv-edu-title">Técnico em Informática</div>
+          <div class="cv-edu-org">IFPA · Campus Ananindeua</div>
+          <div class="cv-edu-when">2015 — 2017</div>
+        </div>
+      </div>
+
+      <div class="cv-section-title">Certificações</div>
+
+      <div class="cv-highlight">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"></path></svg>
+        <span><strong>AWS Certified Cloud Practitioner</strong> · ago 2025, válida até 2028</span>
+      </div>
+
+      <ul class="cv-certs">
+        <li><strong>AWS</strong> — re/Start Graduate e Cloud Essentials (2025)</li>
+        <li><strong>Alura</strong> — Formação JavaScript com foco em back-end (2023) e trilha React e JavaScript, 11 cursos (2021)</li>
+        <li><strong>Grupo Boticário</strong> — Formação GB.Tech Full Stack (2022)</li>
+        <li><strong>Instituto Joga Junto</strong> — Quality Assurance, Gestão de Projetos Ágeis e Práticas de Autoconhecimento (2022)</li>
+        <li><strong>Se Candidate, Mulher!</strong> — Women in Tech (2022) e Instruct The Women (2021)</li>
+        <li><strong>PrograMaria</strong> — HTML, CSS e JavaScript (2021)</li>
+        <li><strong>ASLAN</strong> — Advanced English (2014)</li>
+      </ul>
+
+      <div class="cv-highlight">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.2l5.9-.9z"></path></svg>
+        <span>Grupo vencedor do <strong>Hackathon das Manas</strong> · 2022</span>
+      </div>
 
       <div class="cv-section-title">Comunidade</div>
-      <div class="cv-block">PyLadies Belém · Elas na Tecnologia · organização de meetups, oficinas e mentorias.</div>
+      <div class="cv-block">PyLadies Belém · Elas na Tecnologia · LINUXtips Local Belém — organização de meetups, oficinas e mentorias.</div>
     </div>
   </div>
 </div>
@@ -143,6 +190,15 @@ Full_width: yes
           <div class="cv-job-head"><span class="cv-job-title">Community Coordinator</span><span class="cv-job-when">jul 2025 — current</span></div>
           <div class="cv-job-org">PyLadies Belém · Belém, Pará region, Brazil · Hybrid</div>
           <div class="cv-job-desc">Organizing and supporting events for women in technology.</div>
+        </div>
+      </div>
+
+      <div class="cv-job">
+        <img src="/theme/img/linuxtips.jpg" alt="">
+        <div>
+          <div class="cv-job-head"><span class="cv-job-title">Ambassador</span><span class="cv-job-when">2025 — current</span></div>
+          <div class="cv-job-org">LINUXtips Local Belém</div>
+          <div class="cv-job-desc">Representing the community in Belém, bringing technology closer to people from Pará.</div>
         </div>
       </div>
 
@@ -196,11 +252,49 @@ Full_width: yes
       </div>
 
       <div class="cv-section-title">Education</div>
-      <div class="cv-block"><strong>Cloud Computing — AWS</strong>Escola da Nuvem · 2025</div>
-      <div class="cv-block"><strong>Mobile development</strong>Compass UOL · internship program</div>
+
+      <div class="cv-edu">
+        <div class="cv-edu-blank"></div>
+        <div>
+          <div class="cv-edu-title">Technologist in Systems Analysis and Development</div>
+          <div class="cv-edu-org">Faculdade Facint</div>
+          <div class="cv-edu-when">jun 2024 — current</div>
+        </div>
+      </div>
+
+      <div class="cv-edu">
+        <img src="/theme/img/ifpa.png" alt="">
+        <div>
+          <div class="cv-edu-title">Technical degree in Information Technology</div>
+          <div class="cv-edu-org">IFPA · Ananindeua Campus</div>
+          <div class="cv-edu-when">2015 — 2017</div>
+        </div>
+      </div>
+
+      <div class="cv-section-title">Certifications</div>
+
+      <div class="cv-highlight">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"></path></svg>
+        <span><strong>AWS Certified Cloud Practitioner</strong> · aug 2025, valid through 2028</span>
+      </div>
+
+      <ul class="cv-certs">
+        <li><strong>AWS</strong> — re/Start Graduate and Cloud Essentials (2025)</li>
+        <li><strong>Alura</strong> — JavaScript back-end track (2023) and React/JavaScript track, 11 courses (2021)</li>
+        <li><strong>Grupo Boticário</strong> — GB.Tech Full Stack program (2022)</li>
+        <li><strong>Instituto Joga Junto</strong> — Quality Assurance, Agile Project Management and Self-awareness (2022)</li>
+        <li><strong>Se Candidate, Mulher!</strong> — Women in Tech (2022) and Instruct The Women (2021)</li>
+        <li><strong>PrograMaria</strong> — HTML, CSS and JavaScript (2021)</li>
+        <li><strong>ASLAN</strong> — Advanced English (2014)</li>
+      </ul>
+
+      <div class="cv-highlight">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.2l5.9-.9z"></path></svg>
+        <span>Winning team at <strong>Hackathon das Manas</strong> · 2022</span>
+      </div>
 
       <div class="cv-section-title">Community</div>
-      <div class="cv-block">PyLadies Belém · Elas na Tecnologia · meetups, workshops and mentoring.</div>
+      <div class="cv-block">PyLadies Belém · Elas na Tecnologia · LINUXtips Local Belém — meetups, workshops and mentoring.</div>
     </div>
   </div>
 </div>
