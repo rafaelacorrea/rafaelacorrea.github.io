@@ -10,3 +10,7 @@ __pycache__/
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Repositorio do perfil do GitHub, clonado aqui por conveniencia.
+# E um projeto separado, com git proprio.
+github-profile/
