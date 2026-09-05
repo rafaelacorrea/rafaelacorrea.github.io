@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% set posts = articles_page.object_list if articles_page else articles %}
+
+{% block content %}
+
+{# O hero so aparece na primeira pagina da listagem. As paginas de tag,
+   categoria e autor herdam este template e esvaziam o bloco. #}
+{% block hero %}
+{% if not articles_page or articles_page.number == 1 %}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <div class="hero-id">
+        <img class="hero-avatar" src="{{ SITEURL }}/theme/img/profile.jpg" alt="{{ AUTHOR }}">
+        <div class="hero-id-text">
+          <div class="hero-id-name">{{ HERO_NAME|default(AUTHOR|lower) }}</div>
+          <div>{{ HERO_TAGLINE|default('cloud · python · comunidade') }}</div>
+        </div>
+      </div>
+      <h1>{{ HERO_TITLE|default('Head in the cloud,<br>pés em Belém.') }}</h1>
+      <p class="hero-lede">{{ HERO_LEDE }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ SITEURL }}/pages/curriculo/">Ver currículo</a>
+        <a class="btn btn-ghost" href="{{ SOCIAL_GITHUB }}" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>GitHub</a>
+        <a class="btn btn-ghost" href="{{ SOCIAL_LINKEDIN }}" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"></rect><line x1="8" y1="11" x2="8" y2="16"></line><line x1="8" y1="8" x2="8" y2="8"></line><path d="M12 16v-3a2 2 0 0 1 4 0v3"></path></svg>LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="now-card">
+      <div class="now-label">agora</div>
+      {% for item in NOW_ITEMS %}
+      <div class="now-item">
+        <img src="{{ SITEURL }}/theme/img/{{ item.img }}" alt="{{ item.org }}">
+        <div>
+          <div class="now-role">{{ item.role }}</div>
+          <div class="now-org">{{ item.org }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}
+
+<section class="posts">
+  <div class="shell">
+    <div class="posts-head">
+      <h2 class="eyebrow">{% block listing_title %}últimos posts{% endblock %}</h2>
+      {% block chips %}
+      {% if categories %}
+      <div class="chips">
+        <a class="chip is-active" href="{{ SITEURL }}/">todos</a>
+        {% for cat, _ in categories %}
+        <a class="chip" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% endblock %}
+    </div>
+
+    {% if posts %}
+    <div class="post-grid">
+      {% for article in posts %}
+      {% if loop.first and (not articles_page or articles_page.number == 1) %}
+      {# Post mais recente, em destaque na linha inteira #}
+      <a class="card-featured" href="{{ SITEURL }}/{{ article.url }}">
+        <div>
+          <div class="card-meta">
+            <span class="tag-pill tag-pill-solid">{{ article.category }}</span>
+            <span class="stamp">{{ article.date.strftime('%d.%m.%y') }} · {{ ((article.content|striptags|wordcount) / 200)|round(0, 'ceil')|int }} min</span>
+          </div>
+          <div class="card-title">{{ article.title }}</div>
+          <div class="card-summary">{{ article.summary|striptags }}</div>
+        </div>
+        {% if article.cover %}
+        <img class="cover-img" src="{{ SITEURL }}/{{ article.cover }}" alt="">
+        {% else %}
+        <div class="cover-placeholder"><span>capa do post</span></div>
+        {% endif %}
+      </a>
+      {% else %}
+      <a class="card" href="{{ SITEURL }}/{{ article.url }}">
+        <div class="card-head">
+          <span class="tag-pill">{{ article.category }}</span>
+          <span class="stamp">{{ article.date.strftime('%d.%m.%y') }}</span>
+        </div>
+        <div class="card-title">{{ article.title }}</div>
+        <div class="card-summary">{{ article.summary|striptags }}</div>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if articles_page and articles_paginator.num_pages > 1 %}
+    <div class="paginator">
+      {% if articles_page.has_previous() %}
+      <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">anterior</a>
+      {% endif %}
+      <span class="current">{{ articles_page.number }} / {{ articles_paginator.num_pages }}</span>
+      {% if articles_page.has_next() %}
+      <a href="{{ SITEURL }}/{{ articles_next_page.url }}">próxima</a>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% else %}
+    <div class="empty">
+      <div class="empty-title">Ainda não há posts publicados</div>
+      <div class="empty-sub">Crie um arquivo <code>.md</code> em <code>content/</code> com <code>Title:</code> e <code>Date:</code> no topo.</div>
+    </div>
+    {% endif %}
+
+    {% if NEWSLETTER_ENABLED %}
+    <div class="newsletter">
+      <div>
+        <div class="newsletter-title">{{ NEWSLETTER_TITLE }}</div>
+        <div class="newsletter-sub">{{ NEWSLETTER_SUB }}</div>
+      </div>
+      <form action="{{ NEWSLETTER_ACTION }}" method="post" target="_blank">
+        <input type="email" name="email" placeholder="seu@email.com" required>
+        <button type="submit">Assinar</button>
+      </form>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}

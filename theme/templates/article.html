@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} · {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary|striptags|truncate(160) }}{% endblock %}
+
+{% block content %}
+<main class="article-page">
+  <article class="prose-shell">
+    <a class="back-link" href="{{ SITEURL }}/">← voltar aos posts</a>
+
+    <div class="article-meta">
+      <span class="tag-pill tag-pill-solid">{{ article.category }}</span>
+      <span class="stamp">
+        {{ article.date.strftime('%d.%m.%y') }} ·
+        {{ ((article.content|striptags|wordcount) / 200)|round(0, 'ceil')|int }} min de leitura
+      </span>
+    </div>
+
+    <h1 class="article-title">{{ article.title }}</h1>
+
+    {% if article.summary %}
+    <p class="article-lede">{{ article.summary|striptags }}</p>
+    {% endif %}
+
+    <div class="byline">
+      <img src="{{ SITEURL }}/theme/img/profile.jpg" alt="{{ article.author }}">
+      <div class="byline-text">
+        <span class="byline-name">{{ article.author }}</span> · {{ SITE_LOCATION|default('Belém, PA') }}
+      </div>
+    </div>
+
+    {% if article.cover %}
+    <img class="cover-img" src="{{ SITEURL }}/{{ article.cover }}" alt="{{ article.cover_alt|default('') }}" style="height:220px;margin-bottom:32px">
+    {% elif article.cover_caption %}
+    <div class="cover-hero"><span>{{ article.cover_caption }}</span></div>
+    {% endif %}
+
+    <div class="content">
+      {{ article.content }}
+    </div>
+
+    {% if article.tags %}
+    <div class="article-tags">
+      {% for tag in article.tags %}
+      <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="author-box">
+      <img src="{{ SITEURL }}/theme/img/headinthecloud.jpg" alt="{{ AUTHOR }}">
+      <div>
+        <div class="author-name">Escrito por {{ article.author }}</div>
+        <div class="author-bio">{{ AUTHOR_BIO }}</div>
+      </div>
+    </div>
+
+    {% if article.prev_article or article.next_article %}
+    <div class="pager">
+      {% if article.prev_article %}
+      <a href="{{ SITEURL }}/{{ article.prev_article.url }}">
+        <div class="pager-label">anterior</div>
+        <div class="pager-title">{{ article.prev_article.title }}</div>
+      </a>
+      {% else %}<span></span>{% endif %}
+
+      {% if article.next_article %}
+      <a class="next" href="{{ SITEURL }}/{{ article.next_article.url }}">
+        <div class="pager-label">próximo</div>
+        <div class="pager-title">{{ article.next_article.title }}</div>
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </article>
+</main>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} · {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<main class="page-body">
+  {# Paginas com layout proprio (sobre, projetos, cv) trazem o titulo no corpo
+     e usam largura propria: basta declarar Full_width: yes no cabecalho. #}
+  <div class="{{ 'wide-shell' if page.full_width else 'prose-shell' }}">
+    {% if not page.hide_title %}<h1 class="page-title">{{ page.title }}</h1>{% endif %}
+    <div class="content">
+      {{ page.content }}
+    </div>
+  </div>
+</main>
+{% endblock %}

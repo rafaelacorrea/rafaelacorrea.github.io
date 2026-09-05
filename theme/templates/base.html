@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ SITESUBTITLE|default('') }}{% endblock %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Public+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pages.css">
+
+  {% if FEED_ALL_ATOM %}
+  <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }}" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
+  {% endif %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="{{ SITEURL }}/">
+    <span class="brand-dot"></span>
+    <span class="brand-name">{{ SITE_BRAND|default('rafaelacorrea.dev') }}</span>
+  </a>
+  <nav class="site-nav">
+    {% for label, target in NAVLINKS %}
+    <a href="{{ SITEURL }}{{ target }}">{{ label }}</a>
+    {% endfor %}
+  </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+<footer class="site-footer">
+  <span>&copy; {{ COPYRIGHT_YEAR|default(2026) }} {{ AUTHOR }} &middot; {{ SITE_LOCATION|default('Belém, PA') }}</span>
+  <span class="social">
+    <a href="{{ SOCIAL_GITHUB }}" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>
+    </a>
+    <a href="{{ SOCIAL_LINKEDIN }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="4"></rect><line x1="8" y1="11" x2="8" y2="16"></line><line x1="8" y1="8" x2="8" y2="8"></line><path d="M12 16v-3a2 2 0 0 1 4 0v3"></path></svg>
+    </a>
+    <a href="{{ SOCIAL_INSTAGRAM }}" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><line x1="17" y1="7" x2="17" y2="7"></line></svg>
+    </a>
+    <a href="mailto:{{ SOCIAL_EMAIL }}" aria-label="Email">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"></rect><polyline points="4 8 12 13 20 8"></polyline></svg>
+    </a>
+  </span>
+</footer>
+
+</body>
+</html>
