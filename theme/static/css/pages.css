@@ -81,7 +81,11 @@
   display: flex; justify-content: space-between; align-items: center; gap: 14px;
 }
 .contact-card:hover { color: inherit; outline: 1px solid rgba(203, 178, 255, .35); }
-.contact-left { display: flex; align-items: center; gap: 14px; }
+.contact-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+/* Os spans precisam virar bloco para o nome e o usuario empilharem; como
+   inline eles ficavam na mesma linha e estouravam a largura no celular. */
+.contact-name, .contact-handle { display: block; }
+.contact-handle { overflow-wrap: anywhere; }
 .contact-icon {
   display: flex; align-items: center; justify-content: center;
   width: 42px; height: 42px; border-radius: 12px;
