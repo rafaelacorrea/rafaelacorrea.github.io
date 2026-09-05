@@ -87,6 +87,17 @@ SOCIAL_LINKEDIN = "https://www.linkedin.com/in/rafaelafccorrea/"
 SOCIAL_INSTAGRAM = "https://instagram.com/rafaelacorrea"
 SOCIAL_EMAIL = "oi@rafaelacorrea.dev"
 
+# Buy Me a Coffee. Preencha BMC_USERNAME com o nome de usuario da conta
+# (o trecho final de buymeacoffee.com/SEU-USUARIO) para o botao aparecer no
+# fim dos posts e no rodape. Vazio = nada e exibido.
+BMC_USERNAME = ""
+BMC_LABEL = "Me pague um café"
+BMC_TITLE = "Gostou do post?"
+BMC_TEXT = (
+    "Escrevo essas anotações no tempo livre. Se algo aqui te ajudou, "
+    "um café ajuda a manter o caderno aberto."
+)
+
 # O formulario do design nao tem servico por tras ainda; desligado ate ter um.
 NEWSLETTER_ENABLED = False
 NEWSLETTER_TITLE = "Newsletter quinzenal"

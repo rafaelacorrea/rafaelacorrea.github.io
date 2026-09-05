@@ -317,3 +317,25 @@ img { max-width: 100%; }
   body { background: #fff; color: #111; }
   .site-header, .site-footer, .newsletter, .pager { display: none; }
 }
+
+/* ------------------------------------------------------------- apoio ---- */
+.support {
+  margin-top: 28px; padding: 22px 24px; border-radius: 16px;
+  background: rgba(255, 255, 255, .03); border: 1px solid var(--line);
+  display: flex; gap: 18px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+}
+.support-text { font-size: 14px; line-height: 1.55; color: var(--ink-60); max-width: 46ch; }
+.support-text strong { display: block; color: var(--ink); font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
+
+.btn-coffee {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 20px; border-radius: 10px; white-space: nowrap;
+  background: var(--accent); color: var(--bg-deep);
+  font-size: 13.5px; font-weight: 600;
+}
+.btn-coffee:hover { background: var(--accent-soft); color: var(--bg-deep); }
+
+/* Versao compacta, usada no rodape */
+.footer-coffee { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-soft); }
+
+@media print { .support { display: none; } }
