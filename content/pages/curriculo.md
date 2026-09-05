@@ -32,15 +32,6 @@ Full_width: yes
       <div class="cv-section-title">Experiência</div>
 
       <div class="cv-job">
-        <img src="/theme/img/instruct.jpg" alt="">
-        <div>
-          <div class="cv-job-head"><span class="cv-job-title">Desenvolvedora Python</span><span class="cv-job-when">atual</span></div>
-          <div class="cv-job-org">Instruct</div>
-          <div class="cv-job-desc">Selecionada para atuar com Python.</div>
-        </div>
-      </div>
-
-      <div class="cv-job">
         <img src="/theme/img/pyladies.jpg" alt="">
         <div>
           <div class="cv-job-head"><span class="cv-job-title">Coordenadora de comunidade</span><span class="cv-job-when">jul 2025 — atual</span></div>
@@ -93,6 +84,15 @@ Full_width: yes
           <div class="cv-job-desc">Manutenção do site Sorteios usando linguagem Elixir.</div>
         </div>
       </div>
+
+      <div class="cv-job">
+        <img src="/theme/img/instruct.jpg" alt="">
+        <div>
+          <div class="cv-job-head"><span class="cv-job-title">Desenvolvedora Python</span><span class="cv-job-when">primeiro emprego</span></div>
+          <div class="cv-job-org">Instruct</div>
+          <div class="cv-job-desc">Selecionada para atuar com Python.</div>
+        </div>
+      </div>
     </div>
 
     <div>
@@ -110,7 +110,7 @@ Full_width: yes
       <div class="cv-section-title">Formação acadêmica</div>
 
       <div class="cv-edu">
-        <div class="cv-edu-blank"></div>
+        <img src="/theme/img/facint.jpg" alt="">
         <div>
           <div class="cv-edu-title">Tecnólogo em Análise e Desenvolvimento de Sistemas</div>
           <div class="cv-edu-org">Faculdade Facint</div>
@@ -119,7 +119,7 @@ Full_width: yes
       </div>
 
       <div class="cv-edu">
-        <img src="/theme/img/ifpa.png" alt="">
+        <img src="/theme/img/ifpa.jpg" alt="">
         <div>
           <div class="cv-edu-title">Técnico em Informática</div>
           <div class="cv-edu-org">IFPA · Campus Ananindeua</div>
@@ -176,15 +176,6 @@ Full_width: yes
       <div class="cv-section-title">Experience</div>
 
       <div class="cv-job">
-        <img src="/theme/img/instruct.jpg" alt="">
-        <div>
-          <div class="cv-job-head"><span class="cv-job-title">Python Developer</span><span class="cv-job-when">current</span></div>
-          <div class="cv-job-org">Instruct</div>
-          <div class="cv-job-desc">Selected to work with Python.</div>
-        </div>
-      </div>
-
-      <div class="cv-job">
         <img src="/theme/img/pyladies.jpg" alt="">
         <div>
           <div class="cv-job-head"><span class="cv-job-title">Community Coordinator</span><span class="cv-job-when">jul 2025 — current</span></div>
@@ -237,6 +228,15 @@ Full_width: yes
           <div class="cv-job-desc">Maintenance of the Sorteios website using Elixir.</div>
         </div>
       </div>
+
+      <div class="cv-job">
+        <img src="/theme/img/instruct.jpg" alt="">
+        <div>
+          <div class="cv-job-head"><span class="cv-job-title">Python Developer</span><span class="cv-job-when">first job</span></div>
+          <div class="cv-job-org">Instruct</div>
+          <div class="cv-job-desc">Selected to work with Python.</div>
+        </div>
+      </div>
     </div>
 
     <div>
@@ -254,7 +254,7 @@ Full_width: yes
       <div class="cv-section-title">Education</div>
 
       <div class="cv-edu">
-        <div class="cv-edu-blank"></div>
+        <img src="/theme/img/facint.jpg" alt="">
         <div>
           <div class="cv-edu-title">Technologist in Systems Analysis and Development</div>
           <div class="cv-edu-org">Faculdade Facint</div>
@@ -263,7 +263,7 @@ Full_width: yes
       </div>
 
       <div class="cv-edu">
-        <img src="/theme/img/ifpa.png" alt="">
+        <img src="/theme/img/ifpa.jpg" alt="">
         <div>
           <div class="cv-edu-title">Technical degree in Information Technology</div>
           <div class="cv-edu-org">IFPA · Ananindeua Campus</div>
