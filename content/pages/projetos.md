@@ -74,9 +74,9 @@ Full_width: yes
   </div>
 
   <div class="project-cta">
-    <img src="/theme/img/elas-na-tech.jpg" alt="Elas na Tecnologia">
+    <img src="/theme/img/pyladies.jpg" alt="PyLadies Belém">
     <div>
-      <h3>Encontros Elas na Tecnologia e PyLadies</h3>
+      <h3>Encontros PyLadies Belém</h3>
       <p>Organização de eventos focados no apoio a mulheres que desejam fazer e já fazem parte da área de tecnologia.</p>
     </div>
     <a class="btn btn-ghost" href="/pages/contato/">Convidar para um evento</a>

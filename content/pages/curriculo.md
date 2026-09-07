@@ -52,7 +52,7 @@ Full_width: yes
       <div class="cv-job">
         <img src="/theme/img/elas-na-tech.jpg" alt="">
         <div>
-          <div class="cv-job-head"><span class="cv-job-title">Coordenadora de comunidade</span><span class="cv-job-when">mar 2025 — atual</span></div>
+          <div class="cv-job-head"><span class="cv-job-title">Coordenadora de comunidade</span><span class="cv-job-when">mar 2025 — jul 2026</span></div>
           <div class="cv-job-org">Elas na Tecnologia · Belém, Pará, Brasil · No local</div>
           <div class="cv-job-desc">Organização de eventos focados no apoio a mulheres que desejam fazer e já fazem parte da área de tecnologia.</div>
         </div>
@@ -196,7 +196,7 @@ Full_width: yes
       <div class="cv-job">
         <img src="/theme/img/elas-na-tech.jpg" alt="">
         <div>
-          <div class="cv-job-head"><span class="cv-job-title">Community Coordinator</span><span class="cv-job-when">mar 2025 — current</span></div>
+          <div class="cv-job-head"><span class="cv-job-title">Community Coordinator</span><span class="cv-job-when">mar 2025 — jul 2026</span></div>
           <div class="cv-job-org">Elas na Tecnologia · Belém, Pará, Brazil · On-site</div>
           <div class="cv-job-desc">Organizing events that support women who are already in tech or want to join the field.</div>
         </div>

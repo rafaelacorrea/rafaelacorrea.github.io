@@ -351,6 +351,6 @@ img { max-width: 100%; }
 .btn-coffee noscript img { display: block; height: 48px; width: auto; border-radius: 10px; }
 
 /* Versao compacta, usada no rodape */
-.footer-coffee { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-soft); }
+.footer-coffee { color: var(--accent-soft); }
 
 @media print { .support { display: none; } }
