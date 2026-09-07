@@ -25,6 +25,16 @@
   {% if FEED_ALL_ATOM %}
   <link rel="alternate" type="application/atom+xml" title="{{ SITENAME }}" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">
   {% endif %}
+  {# Analytics do Plausible: so e injetado quando PLAUSIBLE_SRC esta definido,
+     ou seja, apenas na build de publicacao. Assim a navegacao local nao conta. #}
+  {% if PLAUSIBLE_SRC %}
+  <script async src="{{ PLAUSIBLE_SRC }}"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  {% endif %}
+
   {% block head %}{% endblock %}
 </head>
 <body>
