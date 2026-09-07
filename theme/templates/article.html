@@ -73,9 +73,14 @@
         <strong>{{ BMC_TITLE }}</strong>
         {{ BMC_TEXT }}
       </div>
-      <a class="btn-coffee" href="https://www.buymeacoffee.com/{{ BMC_USERNAME }}" target="_blank" rel="noopener">
-        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="{{ BMC_LABEL }}" height="48" width="173">
-      </a>
+      <div class="btn-coffee">
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="{{ BMC_USERNAME }}" data-color="#BD5FFF" data-emoji="" data-font="Cookie" data-text="{{ BMC_LABEL }}" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script>
+        <noscript>
+          <a href="https://www.buymeacoffee.com/{{ BMC_USERNAME }}" target="_blank" rel="noopener">
+            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="{{ BMC_LABEL }}" height="48" width="173">
+          </a>
+        </noscript>
+      </div>
     </div>
     {% endif %}
 

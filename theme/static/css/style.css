@@ -214,7 +214,7 @@ img { max-width: 100%; }
 .content img { border-radius: 12px; margin: 8px 0 24px; }
 .content a { text-decoration: underline; text-underline-offset: 3px; }
 /* Botoes e cartoes dentro do corpo nao sao links de texto: sem sublinhado. */
-.content a.btn, .content a.contact-card, .content a.card, .content a.btn-coffee,
+.content a.btn, .content a.contact-card, .content a.card,
 .content a.chip { text-decoration: none; }
 .content code {
   font-family: var(--mono); font-size: 14px;
@@ -343,11 +343,12 @@ img { max-width: 100%; }
 .support-text { font-size: 14px; line-height: 1.55; color: var(--ink-60); max-width: 46ch; }
 .support-text strong { display: block; color: var(--ink); font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
 
-/* Botao oficial do Buy Me a Coffee: a imagem ja traz cor e rotulo, entao
-   aqui so cuidamos do enquadramento e do hover. */
-.btn-coffee { display: inline-flex; flex-shrink: 0; border-radius: 10px; }
-.btn-coffee img { display: block; height: 48px; width: auto; border-radius: 10px; }
-.btn-coffee:hover { opacity: .88; }
+/* Botao oficial do Buy Me a Coffee. O script deles injeta a propria marcacao
+   ja com cor, fonte e rotulo, entao aqui so reservamos o espaco. A altura
+   evita o pulo de layout enquanto o script nao carrega. */
+.btn-coffee { display: inline-flex; flex-shrink: 0; align-items: center; min-height: 48px; }
+/* Vale so para o fallback em <noscript>, nao para o botao injetado. */
+.btn-coffee noscript img { display: block; height: 48px; width: auto; border-radius: 10px; }
 
 /* Versao compacta, usada no rodape */
 .footer-coffee { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-soft); }
