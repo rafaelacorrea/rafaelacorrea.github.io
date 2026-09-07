@@ -343,13 +343,11 @@ img { max-width: 100%; }
 .support-text { font-size: 14px; line-height: 1.55; color: var(--ink-60); max-width: 46ch; }
 .support-text strong { display: block; color: var(--ink); font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
 
-.btn-coffee {
-  display: inline-flex; align-items: center; gap: 9px;
-  padding: 11px 20px; border-radius: 10px; white-space: nowrap;
-  background: var(--accent); color: var(--bg-deep);
-  font-size: 13.5px; font-weight: 600;
-}
-.btn-coffee:hover { background: var(--accent-soft); color: var(--bg-deep); }
+/* Botao oficial do Buy Me a Coffee: a imagem ja traz cor e rotulo, entao
+   aqui so cuidamos do enquadramento e do hover. */
+.btn-coffee { display: inline-flex; flex-shrink: 0; border-radius: 10px; }
+.btn-coffee img { display: block; height: 48px; width: auto; border-radius: 10px; }
+.btn-coffee:hover { opacity: .88; }
 
 /* Versao compacta, usada no rodape */
 .footer-coffee { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-soft); }
