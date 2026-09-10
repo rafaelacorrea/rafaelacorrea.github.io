@@ -70,7 +70,7 @@ Full_width: yes
     </div>
   </div>
 
-  <div class="project-card">
+  <div class="project-card" style="grid-column:1/-1">
     <div class="project-kicker">estudo · aws</div>
     <h3>Laboratórios de cloud</h3>
     <p>Práticas no console e na CLI da AWS durante o programa da Escola da Nuvem, documentadas em posts.</p>
@@ -81,25 +81,30 @@ Full_width: yes
     </div>
   </div>
 
-  <div class="project-card">
-    <div class="project-kicker">mobile · react native</div>
-    <h3>Todo App — gerenciador de tarefas</h3>
-    <p>Aplicativo mobile em React Native e TypeScript, com autenticação, busca por título ou descrição, criação, edição e exclusão de tarefas, e separação entre criadas e concluídas. Consome API via Axios, com estados de carregamento e mensagens de erro de comunicação.</p>
-    <div class="project-tags">
-      <span>React Native</span>
-      <span>TypeScript</span>
-      <span>Expo</span>
-      <span>Styled Components</span>
-      <span>2024</span>
+  <div class="project-featured">
+    <div>
+      <div class="project-kicker is-lead">mobile · react native · 2024</div>
+      <h2>Todo App — gerenciador de tarefas</h2>
+      <p>Aplicativo mobile em React Native e TypeScript, com autenticação, busca por título ou descrição, criação, edição e exclusão de tarefas, e separação entre criadas e concluídas. Consome API via Axios, com estados de carregamento e mensagens de erro de comunicação.</p>
+      <div class="project-tags">
+        <span>React Native</span>
+        <span>TypeScript</span>
+        <span>Expo</span>
+        <span>Styled Components</span>
+        <span>2024</span>
+      </div>
+      <div class="project-links">
+        <a class="is-primary" href="https://youtu.be/JZ-lPNgVCmI" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>ver demonstração
+        </a>
+        <a href="https://github.com/rafaelacorrea/to-do-compassUol" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>código
+        </a>
+      </div>
     </div>
-    <div class="project-links">
-      <a class="is-primary" href="https://youtu.be/JZ-lPNgVCmI" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>ver demonstração
-      </a>
-      <a href="https://github.com/rafaelacorrea/to-do-compassUol" target="_blank" rel="noopener">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>código
-      </a>
-    </div>
+    <a href="https://youtu.be/JZ-lPNgVCmI" target="_blank" rel="noopener">
+      <img class="cover-img" src="/theme/img/proj-todo.jpg" alt="Demonstração do Todo App em um celular" style="aspect-ratio:16/9">
+    </a>
   </div>
 
   <div class="project-card">
