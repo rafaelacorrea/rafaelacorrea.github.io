@@ -12,7 +12,7 @@ Full_width: yes
     <div>
       <div class="project-kicker is-lead">python · three.js · 2026</div>
       <h2>DNA do Desenvolvedor</h2>
-      <p>O perfil público de alguém no GitHub transformado em uma hélice 3D que dá para girar com o mouse. O algoritmo lê os repositórios e a atividade recente da pessoa, calcula seis traços — backend, frontend, open source, atividade, consistência e experimental — e usa esses traços para construir uma estrutura procedural única. Duas pessoas nunca geram a mesma hélice; a mesma pessoa gera sempre a mesma. Todo o cálculo é Python, servido por uma API que a cena em Three.js consome.</p>
+      <p>O perfil público de alguém no GitHub transformado em uma hélice 3D que dá para girar com o mouse. O algoritmo lê os repositórios e a atividade recente da pessoa, calcula seis traços — backend, frontend, open source, atividade, consistência e experimental — e usa esses traços para construir uma estrutura procedural única. Duas pessoas nunca geram a mesma hélice; a mesma pessoa gera sempre a mesma. Todo o cálculo é Python, servido por uma API que a cena em Three.js consome: digite qualquer usuário do GitHub e a hélice é montada na hora.</p>
       <div class="project-tags">
         <span>Python</span>
         <span>Three.js</span>
@@ -21,15 +21,15 @@ Full_width: yes
         <span>2026</span>
       </div>
       <div class="project-links">
-        <a class="is-primary" href="https://github.com/rafaelacorrea/dna-do-desenvolvedor#demonstracao" target="_blank" rel="noopener">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>ver demonstração
+        <a class="is-primary" href="https://dna.rafaelacorrea.dev" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>abrir ao vivo
         </a>
         <a href="https://github.com/rafaelacorrea/dna-do-desenvolvedor" target="_blank" rel="noopener">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>código
         </a>
       </div>
     </div>
-    <a href="https://github.com/rafaelacorrea/dna-do-desenvolvedor#demonstracao" target="_blank" rel="noopener">
+    <a href="https://dna.rafaelacorrea.dev" target="_blank" rel="noopener">
       <img class="cover-img" src="/theme/img/proj-dna.jpg" alt="Hélice de DNA gerada a partir de um perfil do GitHub, com os seis eixos identificados ao redor" style="aspect-ratio:1160/537">
     </a>
   </div>
